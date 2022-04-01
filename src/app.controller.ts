@@ -1,12 +1,13 @@
-import { Controller, Get } from '@nestjs/common';
-import { AppService } from './app.service';
+import { Controller, Get, Query } from '@nestjs/common';
+import { HeroLogic } from './hero.logic';
+import { GetHeroDto } from './models/getHero.dto';
 
 @Controller()
 export class AppController {
-  constructor(private readonly appService: AppService) {}
+  constructor(private readonly heroLogic: HeroLogic) {}
 
   @Get()
-  getHello(): string {
-    return this.appService.getHello();
+  getHero(@Query() request: GetHeroDto): any {
+    return this.heroLogic.getHero(request);
   }
 }

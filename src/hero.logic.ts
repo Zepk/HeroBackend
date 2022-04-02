@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 import { Injectable } from '@nestjs/common';
 import { AppService } from './app.service';
 import { GetHeroDto } from './models/getHero.dto';

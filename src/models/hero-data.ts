@@ -2,6 +2,8 @@ export class HeroData {
   public image: Image;
   public powerstats: PowerStats;
   public id: string;
+  public name: string;
+  public alignment: string;
 }
 
 export interface PowerStats {

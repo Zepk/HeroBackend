@@ -15,8 +15,9 @@ export class AppService {
   }
 
   private filterHeroData(data: any): HeroData {
-    const { id, powerstats, image } = data;
-    return {id, powerstats, image};
+    const { id, powerstats, image, name, biography } = data;
+    const alignment = biography.alignment;
+    return {id, powerstats, image, name, alignment};
   }
 
 }

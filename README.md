@@ -37,9 +37,13 @@ $ npm install
 In order to run the app a local.env file is required in the root directory, this file should contain the following environment variables:
 
 ```bash
-API_KEY=<Your superheroapi api key>
+HERO_API_KEY=<Your superheroapi api key>
 CORS_ALLOWED_ORIGIN=*
+MAILGUN_API_KEY=<Your mailgun api key>
+MAILGUN_DOMAIN=<Your mailgun domain>
 ```
+
+Remember to have your email as an Authorized Recipients for the api key
 
 ```bash
 # development

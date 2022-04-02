@@ -34,6 +34,13 @@ $ npm install
 
 ## Running the app
 
+In order to run the app a local.env file is required in the root directory, this file should contain the following environment variables:
+
+```bash
+API_KEY=<Your superheroapi api key>
+CORS_ALLOWED_ORIGIN=*
+```
+
 ```bash
 # development
 $ npm run start

@@ -33,7 +33,7 @@ export class AppService {
           from: `test@${domain}`,
           to: request.email,
           subject: request.subject,
-          text: request.content
+          html: request.content
       }).
       then(res => res).
       catch(err => err);

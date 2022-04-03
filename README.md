@@ -28,6 +28,8 @@
 
 ## Installation
 
+node v14.7.0 is recommended
+
 ```bash
 $ npm install
 ```
@@ -43,15 +45,8 @@ MAILGUN_API_KEY=<Your mailgun api key>
 MAILGUN_DOMAIN=<Your mailgun domain>
 ```
 
-Remember to have your email as an Authorized Recipients for the api key
+Remember to have your email as an Authorized Recipient for the api key
 
 ```bash
-# development
 $ npm run start
-
-# watch mode
-$ npm run start:dev
-
-# production mode
-$ npm run start:prod
 ```
